@@ -3,6 +3,7 @@
 *_linux
 .bashrc
 .bashrc.d/
+.profile
 {{ end }}
 
 {{ if ne .chezmoi.os "darwin" }}
