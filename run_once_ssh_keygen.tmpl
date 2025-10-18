@@ -10,7 +10,7 @@ fi
 
 # Update chezmoi remote to use ssh auth
 pushd {{ .chezmoi.sourceDir }}
-if [[ "$(git remote -v)" =~ "https://" ]]; then
-  git remote set-url origin $(git remote -v | head -n 1 | awk '{ print $2 }' | sed -E 's|^https://github.com/|git@github.com:|')
+if [[ "$(git remote -v)" =~ https?:// ]]; then
+  git remote set-url origin $(git remote -v | head -n 1 | awk '{ print $2 }' | sed -E 's|^https?://github.com/|git@github.com:|')
 fi
 popd
