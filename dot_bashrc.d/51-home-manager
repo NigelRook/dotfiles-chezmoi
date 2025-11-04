@@ -1,0 +1,4 @@
+path="$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
+if [[ -f "$path" ]]; then
+  . $path
+fi
