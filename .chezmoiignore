@@ -22,4 +22,5 @@ Library/
 {{ if ne .hostType "server" }}
 *-server
 *_server
+.screenrc
 {{ end }}
