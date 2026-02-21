@@ -7,6 +7,7 @@ encryption = "gpg"
     hostType = {{ $hostType | quote }}
 [data.features]
     niri = {{ if eq $hostType "laptop" }}true{{ else }}false{{ end }}
+    dms = {{ if eq $hostType "laptop" }}true{{ else }}false{{ end }}
 [gpg]
     symmetric = true
     args = ["--batch", "--passphrase", {{ $passphrase | quote }}, "--no-symkey-cache"]

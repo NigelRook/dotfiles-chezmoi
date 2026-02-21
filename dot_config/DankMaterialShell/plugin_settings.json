@@ -1,0 +1,10 @@
+{
+  "dankBatteryAlerts": {
+    "enabled": true
+  },
+  "calculator": {
+    "enabled": true,
+    "noTrigger": false,
+    "trigger": "="
+  }
+}
