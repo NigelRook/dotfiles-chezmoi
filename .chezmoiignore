@@ -17,6 +17,7 @@ Library/
 {{ if ne .hostType "laptop" }}
 *-laptop
 *_laptop
+dot_config/niri
 {{ end }}
 
 {{ if ne .hostType "server" }}
